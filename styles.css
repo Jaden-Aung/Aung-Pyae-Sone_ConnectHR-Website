@@ -1,0 +1,458 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(100deg, rgba(255, 240, 250, 0.8) 0%, rgba(211, 13, 233, 0.8) 90%);
+}
+
+/* Navbar Logo */
+.navbar .navbar-brand .logo {
+    width: 50px;
+    height: auto;
+    border-radius: 40px;
+    margin-left: 25px;
+}
+
+.navbar .collapse .navbar-collapse{
+    margin-right: 20px;
+}
+
+/* Main Section */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(231, 104, 233);
+    padding: 0;
+    background-color: #f4fbfa;
+}
+.left-container {
+    width: 45%;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.right-container {
+    width: 45%;
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.main-container h2 {
+    text-decoration: none;
+    color: #d160d7;
+}
+
+.btn { 
+    background-color: rgba(211, 13, 233, 0.8);
+    border-color: rgba(211, 13, 233, 0.8);
+}
+
+/* Hover effect */
+.btn:hover {
+    background-color: #8c2ee5; 
+    transform: scale(1.05);
+}
+
+/* Card Section */
+.awaits-section {
+    margin: 40px 25px;
+    padding: 5px;
+}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: #d160d7;
+}
+.card-img-top {
+    display: block;
+    width: 100%;  
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card-body {
+    text-align: center;
+}
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.card-text {
+    font-size: 1rem;
+}
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(239, 173, 240);
+    margin-top: 0px;
+}
+.footer-left img {
+    width: 60px;
+    padding-bottom: 10px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer-left p{
+    margin-left: 10px;
+}
+.footer-right {
+    display: flex;
+    gap: 15px;
+}
+.footer-right .social-icon {
+    text-decoration: none;
+    font-size: 24px;
+    color: #555; 
+    transition: color 0.3s ease;
+    margin-right: 10px;
+}
+
+/* Facebook Hover Color */
+.footer-right .social-icon.facebook-color:hover {
+    color: #3b5998;
+}
+
+/* Instagram Hover Color */
+.footer-right .social-icon.instagram-color:hover {
+    color: #833AB4;
+}
+
+/* YouTube Hover Color */
+.footer-right .social-icon.youtube-color:hover {
+    color: #db460c;
+}
+
+/* LinkedIn Hover Color */
+.footer-right .social-icon.linkedin-color:hover {
+    color: #0077b5;
+}
+
+/* Responsive Design */
+/* Medium screens: Tablet view (max-width: 992px) */
+@media (max-width: 992px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%; 
+        padding: 0 10px; 
+    }
+
+    .left-container,
+    .right-container {
+        width: 100%; 
+        text-align: center;
+        margin: 20px 0; 
+    }
+
+    .navbar .navbar-brand .logo {
+        width: 40px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px; 
+    }
+
+    .card {
+        width: 100%; 
+        margin: 0 0 20px;
+    }
+
+    .awaits-section {
+        margin: 20px 0; 
+        padding: 10px; 
+    }
+
+    .tickets-section {
+        margin: 20px 0;
+        padding: 10px;
+    }
+}
+
+/* Small screens: Mobile view (max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar .navbar-brand .logo {
+        width: 35px;
+    }
+
+    .explore-btn {
+        margin-top: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left img {
+        width: 50px; 
+    }
+
+    .footer-left p {
+        text-align: center; 
+        margin: 10px 0; 
+    }
+
+    .footer-right {
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%; 
+        margin: 0 0 20px;
+    }
+
+    .card-img-top {
+        max-width: 90%;
+    }
+
+    .awaits-section {
+        margin: 10px; 
+        padding: 10px;
+    }
+
+    .tickets-section {
+        margin: 10px; 
+    }
+}
+
+/* Speaker Section */
+.speaker-card {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    margin-top: 10px;
+}
+.speaker-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+.speaker-img {
+    width: 180px;
+    border-radius: 100px;
+    padding: 10px 10px;
+    height: 180px;
+    object-fit: cover;
+}
+.view-profile {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-55px, -150px);
+    background: rgba(255, 255, 255, 0.2); 
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 25px;
+    display: none;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: all 0.8s ease-in; 
+}
+.speaker-card:hover .view-profile {
+    display: inline-block;
+}
+.speaker-modal-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 70px 0;
+}
+.modal-body .btn{
+    background-color: white;
+    border: 0px;
+}
+.modal-body .btn .fa-linkedin {
+    font-size: 36px; 
+    color: #0077B5; 
+}
+@media (max-width: 768px) {
+    .speaker-card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Agenda Section */
+.container h2{
+    text-align: center;
+    text-decoration: none;
+}
+
+.benefits-section {
+    margin: 40px 25px;
+    padding: 5px;
+}
+
+.benefits-section h3{
+    margin-top: -25px;
+}
+
+.agenda-card {
+    border: 1px solid rgb(231, 104, 233);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 1s ease-out, box-shadow 0.5s ease-out;
+} 
+.agenda-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overlay: none;
+} 
+.agenda-time {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}  
+.agenda-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #007bff;
+}
+.agenda-title:hover {
+    text-decoration: none;
+}
+.agenda-location {
+    color: #555;
+    font-style: italic;
+}
+  
+.speaker-circle {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.speaker-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}   
+.speaker-circle:hover {
+    transform: scale(1.2);
+} 
+  .speaker-info {
+    margin-left: 25px;
+}
+  
+.speaker-details {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+} 
+.agenda-img {
+    display: block;
+    width: 100%;  
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+/* Tickets Section */
+.tickets-section {
+    margin: 40px 25px;
+    padding: 5px;
+}
+.tickets-section h3 {
+    color: #d160d7;
+}
+.card-header {
+    padding-top: auto;
+    padding-bottom: 1px;
+    background-color: rgba(211, 13, 233, 0.8);
+}
+.card-header h3 {
+    color: #eee;
+    
+}
+.card-body {
+    background-color: rgba(255, 240, 250, 0.8);
+}
+
+/* Sponsor Section */
+.table-container {
+    margin: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    overflow-x: auto;
+    padding: 0;
+}
+.table {
+    margin: 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+/* Responsive for tablets and small desktops (max-width: 992px) */
+@media (max-width: 992px) {
+    .table-container {
+        margin: 10px;
+    }
+    .table th, .table td {
+        font-size: 14px; 
+        padding: 8px; 
+    }
+}
+
+/* Responsive for mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+        margin: 10px;
+    }
+    .table th, .table td {
+        display: block; 
+        text-align: left;
+        width: 100%;
+        font-size: 12px;
+    }
+    .table th {
+        background-color: #f8f9fa;
+        font-weight: bold;
+    }
+    .table tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .table td {
+        border-bottom: 1px solid #ddd;
+    }
+}

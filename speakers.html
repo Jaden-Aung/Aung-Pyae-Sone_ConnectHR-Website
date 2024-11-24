@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 HR Summit</title>
+    <link rel="shortcut icon" href="images/download.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/download.jpeg" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="agenda.html">Agenda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ticket.html">Tickets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Speakers Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Our Speakers</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
+            <!-- Speaker 1 -->
+            <div class="col">
+                <div class="card speaker-card h-100">
+                    <div class="card-img-wrapper text-center">
+                        <img src="images/Jesus Sanz.jpg" class="card-img-top speaker-img" alt="Speaker Profile">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jesus Sanz</h5>
+                        <p class="card-text">Chief Executive Officer</p>
+                        <p class="card-text text-muted">UPS, United States</p>
+                    </div>
+                    <a href="#" class="view-profile" data-bs-toggle="modal" data-bs-target="#speakerModal1">View Profile</a>
+                </div>
+            </div>
+
+            <!-- Speaker 2 -->
+            <div class="col">
+                <div class="card speaker-card h-100">
+                    <div class="card-img-wrapper text-center">
+                        <img src="images/Donald Knight.jpg" class="card-img-top speaker-img" alt="Speaker Profile">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Donald Knight</h5>
+                        <p class="card-text">Group SVP, People & Culture</p>
+                        <p class="card-text text-muted">Warner Bros. Discovery</p>
+                    </div>
+                    <a href="#" class="view-profile" data-bs-toggle="modal" data-bs-target="#speakerModal2">View Profile</a>
+                </div>
+            </div>
+
+            <!-- Speaker 3 -->
+            <div class="col">
+                <div class="card speaker-card h-100">
+                    <div class="card-img-wrapper text-center">
+                        <img src="images/Paul Davies.png" class="card-img-top speaker-img" alt="Speaker Profile">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Paul Davies</h5>
+                        <p class="card-text">SVP & COO</p>
+                        <p class="card-text text-muted">Salesforce</p>
+                    </div>
+                    <a href="#" class="view-profile" data-bs-toggle="modal" data-bs-target="#speakerModal3">View Profile</a>
+                </div>
+            </div>
+
+            <!-- Speaker 4 -->
+            <div class="col">
+                <div class="card speaker-card h-100">
+                    <div class="card-img-wrapper text-center">
+                        <img src="images/Ross Kennedy.jpeg" class="card-img-top speaker-img" alt="Speaker Profile">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ross Kennedy</h5>
+                        <p class="card-text">Global Vice President of Digital Natives</p>
+                        <p class="card-text text-muted">Microsoft,United States</p>
+                    </div>
+                    <a href="#" class="view-profile" data-bs-toggle="modal" data-bs-target="#speakerModal4">View Profile</a>
+                </div>
+            </div>
+            <!-- Speaker 5 -->
+            <div class="col">
+                <div class="card speaker-card h-100">
+                    <div class="card-img-wrapper text-center">
+                        <img src="images/Leigh Elena.jpg" class="card-img-top speaker-img" alt="Speaker Profile">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Leigh Elena Henderson</h5>
+                        <p class="card-text">Digital Creator and Podcast Host</p>
+                        <p class="card-text text-muted">HRManifesto, LLC,United States</p>
+                    </div>
+                    <a href="#" class="view-profile" data-bs-toggle="modal" data-bs-target="#speakerModal5">View Profile</a>
+                </div>
+            </div>
+            <!-- Speaker 6 -->
+            <div class="col">
+                <div class="card speaker-card h-100">
+                    <div class="card-img-wrapper text-center">
+                        <img src="images/Meghan Rhatigan.jpg" class="card-img-top speaker-img" alt="Speaker Profile">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Meghan Rhatigan</h5>
+                        <p class="card-text">Vice President, Talent Acquisition</p>
+                        <p class="card-text text-muted">Marriott International,United States</p>
+                    </div>
+                    <a href="#" class="view-profile" data-bs-toggle="modal" data-bs-target="#speakerModal6">View Profile</a>
+                </div>
+            </div>
+            <!-- Speaker 7 -->
+            <div class="col">
+                <div class="card speaker-card h-100">
+                    <div class="card-img-wrapper text-center">
+                        <img src="images/Matt.jpg" class="card-img-top speaker-img" alt="Speaker Profile">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Matt MacInnis</h5>
+                        <p class="card-text">COO</p>
+                        <p class="card-text text-muted">Rippling,United States</p>
+                    </div>
+                    <a href="#" class="view-profile" data-bs-toggle="modal" data-bs-target="#speakerModal7">View Profile</a>
+                </div>
+            </div>
+            <!-- Speaker 8 -->
+            <div class="col">
+                <div class="card speaker-card h-100">
+                    <div class="card-img-wrapper text-center">
+                        <img src="images/Sagar Khatri.png" class="card-img-top speaker-img" alt="Speaker Profile">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sagar Khatri</h5>
+                        <p class="card-text">CEO</p>
+                        <p class="card-text text-muted">Multiplier,United States</p>
+                    </div>
+                    <a href="#" class="view-profile" data-bs-toggle="modal" data-bs-target="#speakerModal8">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Speaker 1 -->
+    <div class="modal fade" id="speakerModal1" tabindex="-1" aria-labelledby="speakerModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="speakerModalLabel1">Jesus Sanz</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/Jesus Sanz.jpg" class="speaker-modal-img" alt="Speaker Profile">
+                    <p><a href="https://www.linkedin.com" target="_blank" class="btn btn-link"><i class="fa-brands fa-linkedin"></i></a></p>
+                    <p><strong>About the Speaker:</strong> Mr. Donald Knight is the Group SVP, People & Culture at Warner Brothers Discovery, known for his transformative leadership and people-first philosophy. He excels in creating a culture where employees thrive and has a proven track record of formulating scalable global strategies that support international expansion. Before Warner Brothers Discovery, Donald made a significant impact at Greenhouse as Chief People Officer and held key roles at Edelman, Equifax, Southern Company Gas, and the Defense Commissary Agency. He holds a bachelor's degree from Virginia Commonwealth University and a master's from the University of Richmond, with further executive education from Cornell University. A Virginia native now residing in Greater Atlanta, Donald is also dedicated to community and industry progress through active board memberships and philanthropic efforts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Speaker 2 -->
+    <div class="modal fade" id="speakerModal2" tabindex="-1" aria-labelledby="speakerModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="speakerModalLabel2">Donald Knight</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/Donald Knight.jpg" class="speaker-modal-img" alt="Speaker Profile">
+                    <p><a href="https://www.linkedin.com" target="_blank" class="btn btn-link"><i class="fa-brands fa-linkedin"></i></a></p>
+                    <p><strong>About the Speaker:</strong> Mr. Donald Knight is the Group SVP, People & Culture at Warner Brothers Discovery, known for his transformative leadership and people-first philosophy. He excels in creating a culture where employees thrive and has a proven track record of formulating scalable global strategies that support international expansion. Before Warner Brothers Discovery, Donald made a significant impact at Greenhouse as Chief People Officer and held key roles at Edelman, Equifax, Southern Company Gas, and the Defense Commissary Agency. He holds a bachelor's degree from Virginia Commonwealth University and a master's from the University of Richmond, with further executive education from Cornell University. A Virginia native now residing in Greater Atlanta, Donald is also dedicated to community and industry progress through active board memberships and philanthropic efforts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Speaker 3 -->
+    <div class="modal fade" id="speakerModal3" tabindex="-1" aria-labelledby="speakerModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="speakerModalLabel3">Paul Davies</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/Paul Davies.png" class="speaker-modal-img" alt="Speaker Profile">
+                    <p><a href="https://www.linkedin.com" target="_blank" class="btn btn-link"><i class="fa-brands fa-linkedin"></i></a></p>
+                    <p><strong>About the Speaker:</strong>Paul is a senior HR executive, with extensive experience in transformative HR leadership roles across multiple industries. An innovative and passionate Talent, Culture, and Technology steward, he is currently the SVP and COO for Employee Success at Salesforce. Paul has held senior HR roles previously at ServiceNow, GE, and Northern Trust. His education includes degrees and programs from the University of Queensland and World 50 Group. Paul lives and works in the San Francisco Bay Area, California.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Speaker 4 -->
+    <div class="modal fade" id="speakerModal4" tabindex="-1" aria-labelledby="speakerModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="speakerModalLabel4">Ross Kennedy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/Ross Kennedy.jpeg" class="speaker-modal-img" alt="Speaker Profile">
+                    <p><a href="https://www.linkedin.com" target="_blank" class="btn btn-link"><i class="fa-brands fa-linkedin"></i></a></p>
+                    <p><strong>About the Speaker:</strong>As the Global Vice President of Digital Natives for Microsoft, Ross Kennedy focuses on bringing the power of Microsoft to help AI Startups innovate, scale, grow and be market makers and industry disruptors. He works with teams across the company to help emerging high growth ventures go to market quickly and deliver differentiated value to drive business outcomes. Prior to Microsoft, Ross served as the Global Director of Deal Pursuit for Google Cloud and VP Sales & Operations for Liferay, a Gartner leader in digital experience and one of the fastest growing Digital Natives. The company grew from 200 to 900 team members with offices in more than 30 countries. ?He holds a master degree in legal studies from Northwestern and a bachelor degree in engineering.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Speaker 5 -->
+    <div class="modal fade" id="speakerModal5" tabindex="-1" aria-labelledby="speakerModalLabel5" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="speakerModalLabel5">Leigh Elena Henderson</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/Leigh Elena.jpg" class="speaker-modal-img" alt="Speaker Profile">
+                    <p><a href="https://www.linkedin.com" target="_blank" class="btn btn-link"><i class="fa-brands fa-linkedin"></i></a></p>
+                    <p><strong>About the Speaker:</strong>Leigh Elena Henderson is the Founder and Creator of HRManifesto, LLC and considers herself a “toxic workplace survivor” after nearly 20 years in Corporate America supporting a handful of Fortune 100 companies as an Human Resources (HR) executive. Leigh now devotes her time to helping workers thrive through approachable coaching and inspired storytelling through her social content creation, keynotes, writing, and training resources. You can catch @HRManifesto across all the socials, where Leigh strives to unify followers and create community around the shared human experience of work and help all maximize their professional success.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Speaker 6 -->
+    <div class="modal fade" id="speakerModal6" tabindex="-1" aria-labelledby="speakerModalLabel6" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="speakerModalLabel6">Meghan Rhatigan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/Meghan Rhatigan.jpg" class="speaker-modal-img" alt="Speaker Profile">
+                    <p><a href="https://www.linkedin.com" target="_blank" class="btn btn-link"><i class="fa-brands fa-linkedin"></i></a></p>
+                    <p><strong>About the Speaker:</strong>Meghan currently serves as the VP of Talent Acquisition Experience at Marriott, where she leads groundbreaking initiatives within talent acquisition known as "big bets"and is responsible for non-management hiring and recruiting at scale. Previously, Meghan led organizational change management at Marriott, supporting large change initiatives like the Starwood integration and global HCM adoption. Meghan resides in Northern Virginia with her husband, Bobby, and their sons, Colton and Braden. Her interests outside of work include outdoor activities, travel, music, and spending time with her family, friends, and French bulldog, Rhone.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Speaker 7 -->
+    <div class="modal fade" id="speakerModal7" tabindex="-1" aria-labelledby="speakerModalLabel7" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="speakerModalLabel7">Matt Maclnnis</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/Matt.jpg" class="speaker-modal-img" alt="Speaker Profile">
+                    <p><a href="https://www.linkedin.com" target="_blank" class="btn btn-link"><i class="fa-brands fa-linkedin"></i></a></p>
+                    <p><strong>About the Speaker:</strong>Matt MacInnis is the Chief Operating Officer of Rippling. Prior to this role, Matt founded and served as CEO of Inkling, a digital publishing system backed by Sequoia Capital. He also spent seven years at Apple and holds an engineering degree from Harvard University. As COO, Matt is responsible for the day-to-day operations of the company across its HCM, Payroll, IT, and Spend product families. Rippling is on a mission to rethink the way business software is built, and has achieved a growth rate that is largely unprecedented in the history of Silicon Valley. Matt partners with the executive team to ensure operational stability with a positive and passionate company culture. Matt resides in San Francisco with his husband and their two daughters.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Speaker 8 -->
+    <div class="modal fade" id="speakerModal8" tabindex="-1" aria-labelledby="speakerModalLabel8" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="speakerModalLabel8">Sagar Khatri</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/Sagar Khatri.png" class="speaker-modal-img" alt="Speaker Profile">
+                    <p><a href="https://www.linkedin.com" target="_blank" class="btn btn-link"><i class="fa-brands fa-linkedin"></i></a></p>
+                    <p><strong>About the Speaker:</strong>Sagar serves as the CEO and co-founder of Multiplier, a pioneering global employment solution empowering businesses to seamlessly hire, onboard, and compensate talent across 150+ countries. Inspired by his firsthand encounters with the complexities of international expansion in prior ventures, Sagar, alongside his co-founders, established Multiplier to redefine the employment landscape. Their mission is to simplify global workforce management, ensuring it's as effortless as building and managing local teams, while handling intricacies such as employment contracts, payroll, taxes, and benefits in compliance with local regulations. Sagar's strategic vision revolves around rebalancing the global talent ecosystem, creating new avenues for businesses and individuals alike. Through Multiplier, Sagar envisions a world where people can get a job they love without leaving the people they love. A world without limits.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <img src="images/3 copy.png" alt="Logo" class="footer-logo">
+            <p><i class="fa-solid fa-copyright"></i> 2024 ETC, part of the Arc network</p>
+        </div>
+        <div class="footer-right">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon facebook-color">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon instagram-color">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="social-icon youtube-color">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon linkedin-color">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>             
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
